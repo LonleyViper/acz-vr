@@ -1,0 +1,29 @@
+{
+ "authorize_forbidden": [
+  "research/world-terrain/**"
+ ],
+ "campaign": {
+  "id": "world-terrain-research",
+  "orchestrator_profile": "codex-orchestration",
+  "outcome": "Offline, read-only research toward rendering the WHOLE Ace Combat Zero world (terrain, sky, ground objects) ourselves instead of relying on the game's 63x38 degree projected window. Work only under research/world-terrain/ and docs/world-render/. Use only already-extracted local fixtures and the merged decoder tooling (docs/acz-arc-mpl/decoder-tooling.md, research/acz-arc-mpl/), no game launch, no game-memory access, no installs, no network. Job 1: inventory which game archives/files plausibly hold terrain, sky and scenery (names, sizes, container formats) from already-extracted listings and evidence in the repo (STATUS.md, DECISIONS.md, docs/interception, research/experiments), and classify each by evidence level (measured / inferred / unknown); say exactly which files must be extracted next and by which authorized read-only step. Job 2: using the existing ACM/VIF/GIF decoder on any locally available extracted terrain/scenery-like block, report whether positions are 3D pre-projection model-space or already screen-space, with counts and the limits of the evidence; if no such fixture exists, say so and specify the minimal fixture request. Job 3 (only if jobs 1-2 are positive): a design for loading terrain geometry offline, aligning it to the game's per-frame camera (world_to_clip recoverable as inverse(M+256)*M+64; see docs/proposals/pose-contract.md) and rendering it per eye behind the cockpit, with risks, memory/GPU cost and a test plan. Every claim cites file:line or hashed evidence; mark unknowns UNKNOWN. No readiness claim from offline evidence. Output docs/world-render/*.md with Done when, Evidence, Unresolved engine facts, Next authorized experiment. Workers never commit or spawn; other-family review is mandatory.",
+  "scope": [
+   "research/world-terrain/**",
+   "docs/world-render/**"
+  ],
+  "max_jobs": 3,
+  "resources": [],
+  "allowed_profiles": [
+   "codex-work",
+   "codex-review",
+   "claude-work",
+   "claude-review"
+  ]
+ },
+ "agent": {
+  "id": "world-terrain-research",
+  "role": "coordinator",
+  "campaign": "world-terrain-research",
+  "profile": "codex-orchestration",
+  "max_runs": 4
+ }
+}

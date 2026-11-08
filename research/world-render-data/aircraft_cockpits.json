@@ -1,0 +1,1908 @@
+{
+ "source": "data/plmodel/playerlist.txt + <type><skin>.mpl + data/mis/mpl/<type>.pvb (read-only)",
+ "generator": "research/world-render-data/aircraft_cockpits.py",
+ "runtime": "xr_cockpit_model=<model_id>[;stick:side] (bake: model_baker.py vrcockpit <mpl> <pvb> <model_id>.zvrm)",
+ "eye_unique_types": 33,
+ "eye_collision_groups": [
+  [
+   "f15c",
+   "f15e",
+   "f15s"
+  ]
+ ],
+ "aircraft": [
+  {
+   "type": "a10a",
+   "skins": "klmnuo",
+   "model_id": "a10ak_vrcockpit",
+   "mpl": "a10ak.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     7.9,
+     -29.2
+    ],
+    "f36": -3.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 20.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    183056,
+    31232,
+    258896,
+    84656,
+    14480,
+    3664,
+    10880,
+    9280,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 56,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 17,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x3",
+    "0x5",
+    "0x6",
+    "0x7",
+    "0xf",
+    "0x14",
+    "0x1d"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "e06b",
+   "skins": "klmnu",
+   "model_id": "e06bk_vrcockpit",
+   "mpl": "e06bk.mpl",
+   "pvb": {
+    "eye": [
+     -1.885,
+     3.76,
+     -32.7
+    ],
+    "f36": -1.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 35.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    220880,
+    32272,
+    266096,
+    42320,
+    14896,
+    4096,
+    14320,
+    9088,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 60,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 11,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x3",
+    "0x7",
+    "0xc",
+    "0xd",
+    "0xf",
+    "0x11",
+    "0x14",
+    "0x15",
+    "0x17",
+    "0x27"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "e18g",
+   "skins": "klmnu",
+   "model_id": "e18gk_vrcockpit",
+   "mpl": "e18gk.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     5.25,
+     -34.75
+    ],
+    "f36": -13.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 20.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    235216,
+    33216,
+    229296,
+    74272,
+    12192,
+    3904,
+    10128,
+    8400,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 34,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 16,
+   "exterior_animated_groups": [
+    "0x3",
+    "0x4",
+    "0x5",
+    "0x6",
+    "0xf",
+    "0x10",
+    "0x11",
+    "0x14",
+    "0x1d",
+    "0x10001",
+    "0x10002",
+    "0x10007",
+    "0x10010",
+    "0x10011",
+    "0x10015",
+    "0x1001d",
+    "0x10027"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "f01a",
+   "skins": "klmnu",
+   "model_id": "f01ak_vrcockpit",
+   "mpl": "f01ak.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     1.96,
+     -37.5
+    ],
+    "f36": -11.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 15.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    207904,
+    32000,
+    283248,
+    34256,
+    12544,
+    3136,
+    9936,
+    10688,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 29,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 15,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x3",
+    "0x7",
+    "0xc",
+    "0xd",
+    "0xf",
+    "0x11",
+    "0x1d"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "f02a",
+   "skins": "klmnu",
+   "model_id": "f02ak_vrcockpit",
+   "mpl": "f02ak.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     4.0,
+     -33.1
+    ],
+    "f36": -13.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 15.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    181584,
+    34016,
+    247568,
+    50928,
+    11008,
+    2736,
+    9936,
+    8336,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 61,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 30,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x2",
+    "0x3",
+    "0x5",
+    "0x6",
+    "0xf",
+    "0x11",
+    "0x17",
+    "0x1d"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "f04e",
+   "skins": "kelmuo",
+   "model_id": "f04ek_vrcockpit",
+   "mpl": "f04ek.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     6.99,
+     -35.9
+    ],
+    "f36": -13.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 7.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    189872,
+    31696,
+    249824,
+    39840,
+    11280,
+    3552,
+    10064,
+    7856,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 48,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 25,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x3",
+    "0x5",
+    "0x6",
+    "0x7",
+    "0xc",
+    "0xd",
+    "0xf",
+    "0x10",
+    "0x11",
+    "0x17",
+    "0x18",
+    "0x1d"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "f05e",
+   "skins": "klmnu",
+   "model_id": "f05ek_vrcockpit",
+   "mpl": "f05ek.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     3.97,
+     -21.9
+    ],
+    "f36": -10.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 2.5,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    158480,
+    33968,
+    269856,
+    52432,
+    10976,
+    3120,
+    10576,
+    13296,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 57,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 11,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x3",
+    "0x5",
+    "0x6",
+    "0x7",
+    "0xf",
+    "0x10",
+    "0x11",
+    "0x1d"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "f14d",
+   "skins": "kelmu",
+   "model_id": "f14dk_vrcockpit",
+   "mpl": "f14dk.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     5.45,
+     -41.0
+    ],
+    "f36": -13.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 15.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    197056,
+    34608,
+    248416,
+    46880,
+    14432,
+    3904,
+    13568,
+    11088,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 32,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 8,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x3",
+    "0x7",
+    "0xc",
+    "0xd",
+    "0xf",
+    "0x10",
+    "0x11",
+    "0x12",
+    "0x1d",
+    "0x27"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "f15c",
+   "skins": "klmnuv",
+   "model_id": "f15ck_vrcockpit",
+   "mpl": "f15ck.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     5.63,
+     -49.05
+    ],
+    "f36": -19.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 16.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    179872,
+    29968,
+    259312,
+    42368,
+    12128,
+    6080,
+    11312,
+    8160,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 79,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 27,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x3",
+    "0x5",
+    "0x6",
+    "0x7",
+    "0xf",
+    "0x10",
+    "0x1d"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": [
+    "f15e",
+    "f15s"
+   ]
+  },
+  {
+   "type": "f15e",
+   "skins": "klmnu",
+   "model_id": "f15ek_vrcockpit",
+   "mpl": "f15ek.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     5.63,
+     -49.05
+    ],
+    "f36": -19.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 16.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    208256,
+    29056,
+    241936,
+    40672,
+    12848,
+    3008,
+    10416,
+    8160,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 93,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 20,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x3",
+    "0x5",
+    "0x6",
+    "0x7",
+    "0xf",
+    "0x10",
+    "0x1d"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": [
+    "f15c",
+    "f15s"
+   ]
+  },
+  {
+   "type": "f15s",
+   "skins": "kelmnu",
+   "model_id": "f15sk_vrcockpit",
+   "mpl": "f15sk.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     5.63,
+     -49.05
+    ],
+    "f36": -19.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 16.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    162848,
+    29040,
+    241936,
+    55040,
+    13024,
+    3232,
+    10128,
+    8160,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 93,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 20,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x3",
+    "0x5",
+    "0x6",
+    "0x7",
+    "0x8",
+    "0xa",
+    "0xe",
+    "0xf",
+    "0x10",
+    "0x1d"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": [
+    "f15c",
+    "f15e"
+   ]
+  },
+  {
+   "type": "f16c",
+   "skins": "kelmuv",
+   "model_id": "f16ck_vrcockpit",
+   "mpl": "f16ck.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     3.8,
+     -33.2
+    ],
+    "f36": -13.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 15.0,
+    "bytes": 160
+   },
+   "stick": "side",
+   "part_bytes": [
+    166128,
+    34352,
+    243728,
+    32320,
+    8688,
+    2000,
+    9184,
+    8224,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 82,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 28,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x2",
+    "0x3",
+    "0x5",
+    "0x6",
+    "0xf",
+    "0x11",
+    "0x17",
+    "0x1d"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": true,
+   "eye_collides_with": []
+  },
+  {
+   "type": "f16x",
+   "skins": "kelmu",
+   "model_id": "f16xk_vrcockpit",
+   "mpl": "f16xk.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     3.81,
+     -39.45
+    ],
+    "f36": -15.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 15.0,
+    "bytes": 160
+   },
+   "stick": "side",
+   "part_bytes": [
+    197888,
+    33840,
+    260720,
+    57904,
+    9392,
+    2224,
+    9952,
+    8224,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 76,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 20,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x3",
+    "0x5",
+    "0x6",
+    "0xf",
+    "0x11",
+    "0x17",
+    "0x1000f",
+    "0x1001d"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "f17a",
+   "skins": "klmnu",
+   "model_id": "f17ak_vrcockpit",
+   "mpl": "f17ak.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     6.0,
+     -38.1
+    ],
+    "f36": -10.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 20.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    134880,
+    27120,
+    217136,
+    176,
+    7376,
+    2160,
+    13088,
+    16,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 61,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 17,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x2",
+    "0x5",
+    "0x6",
+    "0x7",
+    "0x10",
+    "0x1a",
+    "0x1b",
+    "0x1d",
+    "0x35",
+    "0x36",
+    "0x37"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "f18c",
+   "skins": "kelmu",
+   "model_id": "f18ck_vrcockpit",
+   "mpl": "f18ck.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     4.88,
+     -36.91
+    ],
+    "f36": -16.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 20.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    218176,
+    28800,
+    249808,
+    67008,
+    15328,
+    3344,
+    9968,
+    8304,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 44,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 25,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x2",
+    "0x3",
+    "0x4",
+    "0x5",
+    "0x6",
+    "0x7",
+    "0xf",
+    "0x11",
+    "0x15",
+    "0x17",
+    "0x1d",
+    "0x27",
+    "0x1001d"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "f20a",
+   "skins": "klmnu",
+   "model_id": "f20ak_vrcockpit",
+   "mpl": "f20ak.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     3.961,
+     -22.5
+    ],
+    "f36": -9.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 2.5,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    167456,
+    31472,
+    261120,
+    79520,
+    11536,
+    3440,
+    9264,
+    13296,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 73,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 13,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x2",
+    "0x3",
+    "0x5",
+    "0x6",
+    "0x7",
+    "0xf",
+    "0x11",
+    "0x1d"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "f35c",
+   "skins": "klmnu",
+   "model_id": "f35ck_vrcockpit",
+   "mpl": "f35ck.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     4.9,
+     -31.2
+    ],
+    "f36": -7.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 25.0,
+    "bytes": 160
+   },
+   "stick": "side",
+   "part_bytes": [
+    180592,
+    35488,
+    227360,
+    56544,
+    10480,
+    2848,
+    8976,
+    16,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 30,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 8,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x2",
+    "0x3",
+    "0x4",
+    "0x5",
+    "0x6",
+    "0x7",
+    "0xe",
+    "0x11",
+    "0x15",
+    "0x19",
+    "0x1a",
+    "0x1b",
+    "0x1d",
+    "0x27"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "fa22",
+   "skins": "klmnu",
+   "model_id": "fa22k_vrcockpit",
+   "mpl": "fa22k.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     5.73,
+     -48.4
+    ],
+    "f36": -21.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 13.0,
+    "bytes": 160
+   },
+   "stick": "side",
+   "part_bytes": [
+    208576,
+    31776,
+    239648,
+    29456,
+    12320,
+    2992,
+    8832,
+    16,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 58,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 17,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x2",
+    "0x3",
+    "0x4",
+    "0x5",
+    "0x6",
+    "0x7",
+    "0x8",
+    "0xe",
+    "0x10",
+    "0x11",
+    "0x19",
+    "0x1a",
+    "0x1b",
+    "0x1d"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "j35j",
+   "skins": "kelmu",
+   "model_id": "j35jk_vrcockpit",
+   "mpl": "j35jk.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     3.575,
+     -36.3
+    ],
+    "f36": -14.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 14.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    196304,
+    34288,
+    271056,
+    26528,
+    9264,
+    2432,
+    8064,
+    22096,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 27,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 12,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x3",
+    "0x5",
+    "0x6",
+    "0xf",
+    "0x1d"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": true,
+   "eye_collides_with": []
+  },
+  {
+   "type": "j39c",
+   "skins": "kelmu",
+   "model_id": "j39ck_vrcockpit",
+   "mpl": "j39ck.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     2.2,
+     -31.8
+    ],
+    "f36": -13.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 15.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    222832,
+    41376,
+    211392,
+    81504,
+    14528,
+    2704,
+    8192,
+    11216,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 23,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 11,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x3",
+    "0x5",
+    "0x6",
+    "0xa",
+    "0xf",
+    "0x11",
+    "0x1d"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "m21b",
+   "skins": "klmnu",
+   "model_id": "m21bk_vrcockpit",
+   "mpl": "m21bk.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     3.875,
+     -19.0
+    ],
+    "f36": -3.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 5.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    188352,
+    32400,
+    277072,
+    39872,
+    13072,
+    2768,
+    7824,
+    9152,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 60,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 27,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x2",
+    "0x3",
+    "0x5",
+    "0x6",
+    "0x7",
+    "0xf",
+    "0x17"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": true,
+   "eye_collides_with": []
+  },
+  {
+   "type": "m29a",
+   "skins": "klmnu",
+   "model_id": "m29ak_vrcockpit",
+   "mpl": "m29ak.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     5.19,
+     -34.6
+    ],
+    "f36": -16.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 0.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    224288,
+    37040,
+    191120,
+    121424,
+    11824,
+    3232,
+    8896,
+    16016,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 24,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 8,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x2",
+    "0x3",
+    "0x4",
+    "0x5",
+    "0x6",
+    "0x7",
+    "0xf",
+    "0x11",
+    "0x17",
+    "0x1d"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "m31b",
+   "skins": "kelmu",
+   "model_id": "m31bk_vrcockpit",
+   "mpl": "m31bk.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     4.59,
+     -51.5
+    ],
+    "f36": -23.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 7.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    171984,
+    34576,
+    219408,
+    42560,
+    14064,
+    3344,
+    10784,
+    7360,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 95,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 26,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x3",
+    "0x5",
+    "0x6",
+    "0x7",
+    "0xf",
+    "0x10",
+    "0x11",
+    "0x14",
+    "0x21",
+    "0x10003"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "mr2d",
+   "skins": "klmnu",
+   "model_id": "mr2dk_vrcockpit",
+   "mpl": "mr2dk.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     4.46,
+     -32.6
+    ],
+    "f36": -13.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 20.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    212112,
+    29872,
+    251248,
+    41200,
+    12896,
+    2912,
+    9552,
+    9920,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 57,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 21,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x3",
+    "0x5",
+    "0x6",
+    "0xf",
+    "0x11",
+    "0x17"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "mrgn",
+   "skins": "kelmu",
+   "model_id": "mrgnk_vrcockpit",
+   "mpl": "mrgnk.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     3.9,
+     -52.45
+    ],
+    "f36": -15.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 10.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    197712,
+    67840,
+    205456,
+    22736,
+    12368,
+    3424,
+    11072,
+    16,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 27,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 8,
+   "exterior_animated_groups": [
+    "0x3",
+    "0x4",
+    "0x5",
+    "0x6",
+    "0x7",
+    "0xa",
+    "0xf",
+    "0x1d"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "rm01",
+   "skins": "kelmu",
+   "model_id": "rm01k_vrcockpit",
+   "mpl": "rm01k.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     5.25,
+     -33.4
+    ],
+    "f36": -14.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 22.0,
+    "bytes": 160
+   },
+   "stick": "side",
+   "part_bytes": [
+    180384,
+    29984,
+    248928,
+    38400,
+    12016,
+    2720,
+    8464,
+    9472,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 56,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 20,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x2",
+    "0x3",
+    "0x5",
+    "0x6",
+    "0xa",
+    "0x11",
+    "0x27"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "su27",
+   "skins": "klmnu",
+   "model_id": "su27k_vrcockpit",
+   "mpl": "su27k.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     6.9,
+     -46.8
+    ],
+    "f36": -16.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 16.5,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    192768,
+    28144,
+    256560,
+    34896,
+    12688,
+    3616,
+    11824,
+    16528,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 42,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 13,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x2",
+    "0x3",
+    "0x5",
+    "0x6",
+    "0xf",
+    "0x11",
+    "0x17"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "su32",
+   "skins": "klmnu",
+   "model_id": "su32k_vrcockpit",
+   "mpl": "su32k.mpl",
+   "pvb": {
+    "eye": [
+     -2.1,
+     6.4,
+     -46.9
+    ],
+    "f36": -15.0,
+    "f52": 2.0,
+    "f56": 50.0,
+    "f60": 13.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    197488,
+    40144,
+    247024,
+    1184,
+    11200,
+    3568,
+    10880,
+    16528,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 47,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 6,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x2",
+    "0x3",
+    "0x4",
+    "0x5",
+    "0x6",
+    "0xa",
+    "0x11",
+    "0x17"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "su37",
+   "skins": "kelmu",
+   "model_id": "su37k_vrcockpit",
+   "mpl": "su37k.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     7.2,
+     -46.8
+    ],
+    "f36": -16.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 16.5,
+    "bytes": 160
+   },
+   "stick": "side",
+   "part_bytes": [
+    197040,
+    28672,
+    257856,
+    56160,
+    13152,
+    3344,
+    12992,
+    16416,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 41,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 14,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x2",
+    "0x3",
+    "0x5",
+    "0x6",
+    "0x8",
+    "0x9",
+    "0xa",
+    "0xf",
+    "0x11",
+    "0x17"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "su47",
+   "skins": "kelmu",
+   "model_id": "su47k_vrcockpit",
+   "mpl": "su47k.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     3.83,
+     -49.4
+    ],
+    "f36": -18.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 15.0,
+    "bytes": 160
+   },
+   "stick": "side",
+   "part_bytes": [
+    146656,
+    26864,
+    228512,
+    42848,
+    13056,
+    4160,
+    11648,
+    16,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 47,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 13,
+   "exterior_animated_groups": [
+    "0x3",
+    "0x4",
+    "0x10",
+    "0x1a",
+    "0x1b",
+    "0x10001",
+    "0x10005",
+    "0x10006",
+    "0x10007",
+    "0x1000a",
+    "0x10011",
+    "0x10017",
+    "0x1001a",
+    "0x1001b"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "tnd4",
+   "skins": "klmnu",
+   "model_id": "tnd4k_vrcockpit",
+   "mpl": "tnd4k.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     2.01,
+     -30.4
+    ],
+    "f36": -11.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 2.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    235680,
+    36128,
+    253024,
+    57920,
+    13120,
+    3728,
+    11184,
+    6576,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 58,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 18,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x3",
+    "0x7",
+    "0xc",
+    "0xd",
+    "0xf",
+    "0x10",
+    "0x11",
+    "0x12",
+    "0x18",
+    "0x1d",
+    "0x28"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "typn",
+   "skins": "kelmuo",
+   "model_id": "typnk_vrcockpit",
+   "mpl": "typnk.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     5.5,
+     -34.2
+    ],
+    "f36": -13.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 25.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    206048,
+    30864,
+    241840,
+    52688,
+    11424,
+    2400,
+    9072,
+    8336,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 50,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 18,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x3",
+    "0x5",
+    "0x6",
+    "0xa",
+    "0xf",
+    "0x11",
+    "0x14",
+    "0x1d"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "x02a",
+   "skins": "klmnu",
+   "model_id": "x02ak_vrcockpit",
+   "mpl": "x02ak.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     2.8,
+     -49.6
+    ],
+    "f36": -16.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 20.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    168960,
+    36608,
+    211856,
+    31744,
+    12688,
+    4784,
+    12944,
+    16,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 37,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 19,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x2",
+    "0x5",
+    "0x6",
+    "0x7",
+    "0x8",
+    "0x9",
+    "0xa",
+    "0x12",
+    "0x1b",
+    "0x1d",
+    "0x10036",
+    "0x10037",
+    "0x30036",
+    "0x30037"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "x29a",
+   "skins": "klmnu",
+   "model_id": "x29ak_vrcockpit",
+   "mpl": "x29ak.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     3.95,
+     -27.1
+    ],
+    "f36": -9.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 2.5,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    167504,
+    37680,
+    256176,
+    42608,
+    11520,
+    3120,
+    9680,
+    16272,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 40,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 12,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x3",
+    "0x5",
+    "0x6",
+    "0x7",
+    "0xa",
+    "0x1d"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "yf23",
+   "skins": "kelmu",
+   "model_id": "yf23k_vrcockpit",
+   "mpl": "yf23k.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     4.85,
+     -53.0
+    ],
+    "f36": -21.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 17.0,
+    "bytes": 160
+   },
+   "stick": "side",
+   "part_bytes": [
+    134464,
+    28544,
+    275312,
+    23824,
+    10160,
+    2912,
+    10704,
+    16,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 49,
+   "cockpit_animated_nodes": 0,
+   "cockpit_glass_parts": 13,
+   "exterior_animated_groups": [
+    "0x1",
+    "0x2",
+    "0x5",
+    "0x6",
+    "0x7",
+    "0xe",
+    "0x11",
+    "0x19",
+    "0x1a",
+    "0x1b",
+    "0x1d"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  },
+  {
+   "type": "zoef",
+   "skins": "klmnuv",
+   "model_id": "zoefk_vrcockpit",
+   "mpl": "zoefk.mpl",
+   "pvb": {
+    "eye": [
+     0.0,
+     5.4,
+     -39.1
+    ],
+    "f36": -15.0,
+    "f52": 2.0,
+    "f56": 90.0,
+    "f60": 20.0,
+    "bytes": 160
+   },
+   "stick": "centre",
+   "part_bytes": [
+    229824,
+    56208,
+    260000,
+    42480,
+    13872,
+    3648,
+    11696,
+    16,
+    263216,
+    17456
+   ],
+   "cockpit_nodes": 71,
+   "cockpit_animated_nodes": 22,
+   "cockpit_glass_parts": 12,
+   "exterior_animated_groups": [
+    "0x3",
+    "0x4",
+    "0x5",
+    "0x6",
+    "0x7",
+    "0x8",
+    "0x9",
+    "0xa",
+    "0xe",
+    "0xf",
+    "0x1a",
+    "0x1b",
+    "0x1d"
+   ],
+   "cockpit_atlas": [
+    128,
+    128
+   ],
+   "baked": false,
+   "eye_collides_with": []
+  }
+ ]
+}

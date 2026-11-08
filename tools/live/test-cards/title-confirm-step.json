@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "title-confirm-step",
+  "purpose": "From the verified title screen's Press any button checkpoint, continue once and capture the first menu or transition screen.",
+  "requiresCurrentUserApproval": true,
+  "expectedStartCheckpoint": "ACE COMBAT ZERO title screen displaying Press any button",
+  "maxActions": 1,
+  "actions": [
+    {
+      "type": "tap",
+      "key": "confirm",
+      "expectedAfter": "first title-menu or title-transition screen"
+    }
+  ],
+  "stopCondition": "Stop if the initial screenshot is not the Press any button title screen, or if an unexpected prompt appears after the action."
+}

@@ -1,0 +1,21 @@
+build/
+out/
+*.obj
+*.pdb
+*.ilk
+*.dll
+*.exe
+*.log
+*.rdc
+*.png
+*.jpg
+__pycache__/
+# never commit game data
+*.arc
+*.acm
+*.mpl
+*.gim
+*.pac
+*.zvr*
+!tests/acz-vr/fixtures/props_synth.zvro
+tools/evidence/

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "campaign-intro-skip-step",
+  "purpose": "From the verified campaign-intro cinematic, skip that cinematic once and capture the next campaign card or briefing checkpoint.",
+  "requiresCurrentUserApproval": true,
+  "expectedStartCheckpoint": "campaign-intro cinematic with map/subtitle presentation",
+  "maxActions": 1,
+  "actions": [
+    {
+      "type": "tap",
+      "key": "back",
+      "expectedAfter": "mission card or briefing checkpoint"
+    }
+  ],
+  "stopCondition": "Stop if the initial screenshot is not the campaign-intro cinematic, or if an unexpected menu or prompt appears after the action."
+}

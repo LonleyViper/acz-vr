@@ -1,0 +1,47 @@
+{
+  "schema": "acz-cockpit-display-surface-candidates/v1",
+  "status": "offline candidate evidence only; not a selectable runtime profile",
+  "model": {
+    "archive_model_id": "itesu",
+    "mpl_sha256": "614f4e683d34348df80a159fd1156aa21827248145efcef14f549804c17f9a9a",
+    "acm_part": 2,
+    "acm_sha256": "a01b8e008c1fec1d9e555ae4e58b1ba0d33276da0eff29f18a16c07c5dc577b3",
+    "texture_part": 9,
+    "texture_sha256": "db68018cb2232ce7ec567da294426470c1d010afbf1964d8954f5391215243c3",
+    "texture_size": [512, 512]
+  },
+  "candidates": [
+    {
+      "id": "port-forward-green-display",
+      "proposed_domain": "radar",
+      "domain_evidence": "the decoded cockpit atlas visibly shows a green tactical/radar-like raster at this UV rectangle; semantic assignment is visual inference only",
+      "acm_batch_offset": "0x210",
+      "source_vertex_count": 4,
+      "uv_rect_normalized": [0.1715692282, 0.3010668755, 0.2812442482, 0.4107418061],
+      "atlas_rect_pixels": [87.84, 154.15, 56.15, 56.15],
+      "position_bounds_source_lanes": [-0.9975109100, 2.3639407158, -35.0520439148, -0.5144954324, 2.8328013420, -34.9359664917]
+    },
+    {
+      "id": "starboard-forward-green-display",
+      "proposed_domain": "stores_status",
+      "domain_evidence": "the decoded cockpit atlas visibly shows a distinct structured green display at this UV rectangle; exact stores/weapon labels are not decoded",
+      "acm_batch_offset": "0x16c",
+      "source_vertex_count": 4,
+      "uv_rect_normalized": [0.5150018930, 0.3017023206, 0.6252503991, 0.4087194204],
+      "atlas_rect_pixels": [263.68, 154.47, 56.45, 54.79],
+      "position_bounds_source_lanes": [0.5144954324, 2.3639407158, -35.0520439148, 0.9975109100, 2.8328013420, -34.9359664917]
+    }
+  ],
+  "observed_source_lane_facts": [
+    "Each candidate is a complete five-UNPACK batch with adjacent V3-32 position, V3-16 normal, V4-8 colour and V2-32 UV source lanes.",
+    "Both candidates have four source vertices, constant source colour [128,128,128,128], and the same normal source lane [0,984,3975].",
+    "The UV rectangles resolve directly to the decoded part-9 atlas pixels listed above."
+  ],
+  "not_established": [
+    "VIF/VU execution, GIF primitive assembly and final triangle topology.",
+    "The model-space coordinate frame or camera relationship.",
+    "Runtime draw identity, texture binding state, aircraft selection identity or per-eye calibration.",
+    "A labelled radar or weapons-status semantic source in game data."
+  ],
+  "runtime_gate": "Use only after the named ACM draw and texture binding are independently confirmed, left/right calibration plus cockpit depth are recorded, and the aircraft selection is unambiguous. Otherwise render no console panel."
+}

@@ -1,0 +1,56 @@
+# This subdirectory is also a dependency-free standalone offline test project.
+cmake_minimum_required(VERSION 3.20)
+project(acz-xr-probe LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+option(ACZ_VR_BUILD_XR_PROBE "Build standalone real-runtime probe (never run by tests)" OFF)
+option(ACZ_XR_PROBE_BUILD_TESTS "Build fake-only probe tests" ON)
+set(ACZ_XR_PROBE_COMMIT "unspecified" CACHE STRING "Executor-supplied source commit pin")
+add_library(xr_probe_core STATIC probe_core.cpp colour_owner.cpp)
+target_include_directories(xr_probe_core PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
+if(ACZ_XR_PROBE_BUILD_TESTS)
+  enable_testing()
+  add_executable(xr_probe_offline_tests ../../../tests/acz-vr/xr_probe_offline_tests.cpp)
+  target_link_libraries(xr_probe_offline_tests PRIVATE xr_probe_core)
+  add_test(NAME xr_probe_fake_offline COMMAND xr_probe_offline_tests)
+  set_tests_properties(xr_probe_fake_offline PROPERTIES TIMEOUT 10)
+  add_executable(xr_probe_colour_offline_tests ../../../tests/acz-vr/xr_probe_colour_offline_tests.cpp)
+  target_link_libraries(xr_probe_colour_offline_tests PRIVATE xr_probe_core)
+  add_test(NAME xr_probe_colour_fake_offline COMMAND xr_probe_colour_offline_tests)
+  set_tests_properties(xr_probe_colour_fake_offline PROPERTIES TIMEOUT 10)
+  # Card (d): fake XR/D3D12 receipts plus a pure C++ software rasteriser.
+  add_executable(xr_probe_stereo_offline_tests ../../../tests/acz-vr/xr_probe_stereo_offline_tests.cpp)
+  target_link_libraries(xr_probe_stereo_offline_tests PRIVATE xr_probe_core)
+  add_test(NAME xr_probe_stereo_fake_offline COMMAND xr_probe_stereo_offline_tests)
+  set_tests_properties(xr_probe_stereo_fake_offline PROPERTIES TIMEOUT 30)
+endif()
+if(ACZ_VR_BUILD_XR_PROBE)
+  if(NOT WIN32)
+    message(FATAL_ERROR "The real probe requires Windows D3D12")
+  endif()
+  if(NOT TARGET openxr_loader)
+    # Standalone builds require an explicitly supplied, pre-existing offline
+    # cache. No default original-evidence path, fetch, install or download.
+    if(NOT EXISTS "${FETCHCONTENT_SOURCE_DIR_OPENXR}/CMakeLists.txt")
+      message(FATAL_ERROR "Provide the hydrated offline FETCHCONTENT_SOURCE_DIR_OPENXR")
+    endif()
+    set(FETCHCONTENT_FULLY_DISCONNECTED ON CACHE BOOL "Offline only" FORCE)
+    add_subdirectory("${FETCHCONTENT_SOURCE_DIR_OPENXR}" "${CMAKE_CURRENT_BINARY_DIR}/openxr")
+  endif()
+  # Card (d) shaders: Windows SDK fxc at build time -> embedded bytecode headers.
+  find_program(ACZ_XR_PROBE_FXC fxc REQUIRED)
+  set(_acz_hlsl ${CMAKE_CURRENT_SOURCE_DIR}/synthetic_stereo.hlsl)
+  set(_acz_shader_dir ${CMAKE_CURRENT_BINARY_DIR}/shaders)
+  file(MAKE_DIRECTORY ${_acz_shader_dir})
+  add_custom_command(OUTPUT ${_acz_shader_dir}/synthetic_vs.h
+    COMMAND ${ACZ_XR_PROBE_FXC} /nologo /WX /O3 /T vs_5_0 /E vs_main /Vn g_synthetic_vs /Fh ${_acz_shader_dir}/synthetic_vs.h ${_acz_hlsl}
+    DEPENDS ${_acz_hlsl} VERBATIM)
+  add_custom_command(OUTPUT ${_acz_shader_dir}/synthetic_ps.h
+    COMMAND ${ACZ_XR_PROBE_FXC} /nologo /WX /O3 /T ps_5_0 /E ps_main /Vn g_synthetic_ps /Fh ${_acz_shader_dir}/synthetic_ps.h ${_acz_hlsl}
+    DEPENDS ${_acz_hlsl} VERBATIM)
+  add_executable(xr_probe xr_probe_main.cpp real_backend.cpp ${_acz_shader_dir}/synthetic_vs.h ${_acz_shader_dir}/synthetic_ps.h)
+  target_include_directories(xr_probe PRIVATE ${_acz_shader_dir})
+  target_link_libraries(xr_probe PRIVATE xr_probe_core openxr_loader d3d12 dxgi user32)
+  target_compile_definitions(xr_probe PRIVATE ACZ_XR_PROBE_COMMIT="${ACZ_XR_PROBE_COMMIT}")
+  # Deliberately NO add_test for xr_probe and no relationship to acz-vr/dxgi.
+endif()

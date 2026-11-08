@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "mission-card-acknowledge-step-space",
+  "purpose": "From the verified #02 Annex Operation Roselein campaign card, acknowledge the card once and capture the briefing or overview checkpoint.",
+  "requiresCurrentUserApproval": true,
+  "expectedStartCheckpoint": "#02 Annex Operation Roselein campaign card",
+  "maxActions": 1,
+  "actions": [
+    {
+      "type": "tap",
+      "key": "accelerate",
+      "expectedAfter": "briefing or mission-overview checkpoint"
+    }
+  ],
+  "stopCondition": "Stop if the initial screenshot is not the #02 Annex card, or if a mission launches, an unexpected menu appears, or a configuration prompt is shown after the action."
+}

@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "mission-look-sweep-observation",
+  "purpose": "From a human-verified unpaused mission HUD, observe each native camera-look direction as a bounded baseline for HMD-view testing.",
+  "requiresCurrentUserApproval": true,
+  "expectedStartCheckpoint": "unpaused-mission-hud",
+  "maxActions": 4,
+  "actions": [
+    {
+      "type": "hold",
+      "key": "look-left",
+      "durationMilliseconds": 250,
+      "expectedAfter": "mission-hud-with-camera-looked-left"
+    },
+    {
+      "type": "hold",
+      "key": "look-right",
+      "durationMilliseconds": 500,
+      "expectedAfter": "mission-hud-with-camera-looked-right"
+    },
+    {
+      "type": "hold",
+      "key": "look-up",
+      "durationMilliseconds": 250,
+      "expectedAfter": "mission-hud-with-camera-looked-up"
+    },
+    {
+      "type": "hold",
+      "key": "look-down",
+      "durationMilliseconds": 500,
+      "expectedAfter": "mission-hud-with-camera-looked-down"
+    }
+  ],
+  "stopCondition": "Stop immediately if an overlay, menu, unexpected camera mode, or non-mission screen appears, or if the pre-action screenshot does not show the human-verified HUD."
+}

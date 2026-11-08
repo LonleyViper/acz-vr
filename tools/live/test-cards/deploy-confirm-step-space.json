@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "deploy-confirm-step-space",
+  "purpose": "From the verified Deploy with this selection checkpoint, deploy the retained default aircraft and loadout once, then capture the first mission loading or HUD state.",
+  "requiresCurrentUserApproval": true,
+  "expectedStartCheckpoint": "hangar deployment screen displaying Deploy with this selection",
+  "maxActions": 1,
+  "actions": [
+    {
+      "type": "tap",
+      "key": "accelerate",
+      "expectedAfter": "mission loading or initial in-mission checkpoint"
+    }
+  ],
+  "stopCondition": "Stop if the deployment prompt is absent before input, or if an unexpected menu or configuration prompt appears after the action. Do not send flight controls in this card."
+}

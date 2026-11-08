@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "mission-cockpit-view-step",
+  "purpose": "From the verified active in-mission HUD, switch once to the native cockpit view and capture that camera baseline.",
+  "requiresCurrentUserApproval": true,
+  "expectedStartCheckpoint": "active in-mission HUD with the aircraft airborne and no menu or opening prompt",
+  "maxActions": 1,
+  "actions": [
+    {
+      "type": "tap",
+      "key": "cockpit-view",
+      "expectedAfter": "active in-mission cockpit view"
+    }
+  ],
+  "stopCondition": "Stop if the initial screenshot is not the active in-mission HUD, or if a menu, prompt, or non-mission screen appears after the view-change action."
+}

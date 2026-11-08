@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "aircraft-confirm-step",
+  "purpose": "From the verified default J35J Draken aircraft selection, retain that selection once and capture the weapon/loadout checkpoint.",
+  "requiresCurrentUserApproval": true,
+  "expectedStartCheckpoint": "aircraft selection showing J35J Draken and Select your aircraft",
+  "maxActions": 1,
+  "actions": [
+    {
+      "type": "tap",
+      "key": "confirm",
+      "expectedAfter": "weapon or loadout selection checkpoint"
+    }
+  ],
+  "stopCondition": "Stop if J35J Draken is not the visible selected aircraft, or if deployment/gameplay begins or an unexpected prompt appears after the action."
+}

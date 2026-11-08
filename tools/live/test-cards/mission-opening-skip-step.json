@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "mission-opening-skip-step",
+  "purpose": "From the verified initial in-mission runway HUD that displays Press menu button to skip, dismiss only that opening sequence and capture the active mission view.",
+  "requiresCurrentUserApproval": true,
+  "expectedStartCheckpoint": "initial runway HUD displaying Press menu button to skip",
+  "maxActions": 1,
+  "actions": [
+    {
+      "type": "tap",
+      "key": "back",
+      "expectedAfter": "active in-mission view without the opening skip prompt"
+    }
+  ],
+  "stopCondition": "Stop if the opening skip prompt is absent before input, or if a menu, configuration prompt, or unexpected non-mission screen appears after the action."
+}

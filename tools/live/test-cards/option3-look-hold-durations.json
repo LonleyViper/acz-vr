@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "option3-look-hold-durations",
+  "purpose": "Option 3 stage 0 (read-only probe run): look-left holds of 150/300/700 ms and one look-up 150 ms, each followed by a 4 s forward gap, to measure the look filter response.",
+  "requiresCurrentUserApproval": true,
+  "expectedStartCheckpoint": "unpaused-mission-cockpit-view",
+  "maxActions": 8,
+  "actions": [
+    {
+      "type": "hold",
+      "key": "look-left",
+      "durationMilliseconds": 150,
+      "captureDuringHold": true,
+      "expectedAfter": "cockpit-view-looking-left"
+    },
+    {
+      "type": "wait",
+      "durationMilliseconds": 4000,
+      "expectedAfter": "cockpit-view-forward"
+    },
+    {
+      "type": "hold",
+      "key": "look-left",
+      "durationMilliseconds": 300,
+      "captureDuringHold": true,
+      "expectedAfter": "cockpit-view-looking-left"
+    },
+    {
+      "type": "wait",
+      "durationMilliseconds": 4000,
+      "expectedAfter": "cockpit-view-forward"
+    },
+    {
+      "type": "hold",
+      "key": "look-left",
+      "durationMilliseconds": 700,
+      "captureDuringHold": true,
+      "expectedAfter": "cockpit-view-looking-left"
+    },
+    {
+      "type": "wait",
+      "durationMilliseconds": 4000,
+      "expectedAfter": "cockpit-view-forward"
+    },
+    {
+      "type": "hold",
+      "key": "look-up",
+      "durationMilliseconds": 150,
+      "captureDuringHold": true,
+      "expectedAfter": "cockpit-view-looking-up"
+    },
+    {
+      "type": "wait",
+      "durationMilliseconds": 4000,
+      "expectedAfter": "cockpit-view-forward"
+    }
+  ],
+  "stopCondition": "Stop if the start screenshot is not the in-flight cockpit view, or if a menu, overlay or non-mission screen appears."
+}

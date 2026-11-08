@@ -1,0 +1,29 @@
+{
+  "authorize_forbidden": [
+    "research/acz-arc-mpl/**"
+  ],
+  "campaign": {
+    "id": "acz-arc-mpl",
+    "orchestrator_profile": "codex-orchestration",
+    "outcome": "Offline, read-only continuation of the 2026-10-26 ACZ .arc/.mpl cockpit-geometry handoff. Work only in research/acz-arc-mpl/ and docs/acz-arc-mpl/. First, extend the local clean-room analysis tooling to defensively decode the full VIF/GIF command stream of an already-extracted ACM block, including positions, UVs, colours, normals, GIF primitive/topology facts where evidenced, and an OBJ/MTL-style export that preserves any unresolved packet semantics. Use synthetic binary fixtures and deterministic tests; do not claim triangle topology merely from an UNPACK command. Second, if a read-only extracted MPL/ACM fixture is locally available and its provenance is recorded in the supplied handoff, run the tool against f16ck part 2 before itesu part 2 and record exact counts, rejected/unknown commands, and the limits of the evidence. Third, examine only locally supplied, already-extracted MPL/ACM or HUD fixture bytes for the cockpit-view camera lead: compare ACM 64-byte records and AHM part 4 across aircraft; identify itesu parts 0 and 1; classify FHM/ATD structure only to the degree directly supported by bytes. Produce a compact follow-up report under docs/acz-arc-mpl/ with Done when, Evidence, Unresolved engine facts, and Next authorized experiment. The source handoff is evidence, not authority to invent inputs or runtime facts. Do not vendor, download, execute, or extract the third-party aczarc.py/mod DLLs; do not browse, network, install, launch, attach, inject, alter game files, operate VR/headset/GPU capture, or write outside campaign scope. Game archives, if present, are read-only inputs only; never use pack, patch, override, or mod. File/archive offsets are never runtime addresses. Workers never commit or spawn; source work and review use different model families. Run the offline verifier appropriate to the role and the cheapest focused deterministic tests. A missing extracted fixture is a reportable blocker, not a reason to inspect broadly or reconstruct an archive extractor.",
+    "scope": [
+      "research/acz-arc-mpl/**",
+      "docs/acz-arc-mpl/**"
+    ],
+    "max_jobs": 3,
+    "resources": [],
+    "allowed_profiles": [
+      "codex-work",
+      "codex-review",
+      "claude-work",
+      "claude-review"
+    ]
+  },
+  "agent": {
+    "id": "acz-arc-mpl",
+    "role": "coordinator",
+    "campaign": "acz-arc-mpl",
+    "profile": "codex-orchestration",
+    "max_runs": 4
+  }
+}

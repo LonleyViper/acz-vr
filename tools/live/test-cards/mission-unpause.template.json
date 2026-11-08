@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "mission-unpause-observation",
+  "purpose": "After a human verifies that ACZero is paused at the mission HUD, dismiss the pause state and capture the resulting in-mission screen.",
+  "requiresCurrentUserApproval": true,
+  "expectedStartCheckpoint": "paused-mission-hud",
+  "maxActions": 1,
+  "actions": [
+    {
+      "type": "tap",
+      "key": "back",
+      "expectedAfter": "unpaused-mission-hud"
+    }
+  ],
+  "stopCondition": "Stop if the initial or post-action screenshot does not match the human-verified checkpoint, or if an unexpected menu or prompt appears."
+}

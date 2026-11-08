@@ -1,0 +1,32 @@
+{
+ "format": "acz-mission-stages",
+ "version": 1,
+ "source": "docs/world-render/stages-and-detection.md section 2 (title cards data/mistitle/mNN.gim, data/brdata/BriefingID.bin, data/mis/pack/<id>, data/map/<id>)",
+ "variant_note": "k/m/n = the three ace-style variants of one mission (BriefingID.bin record type 1 or 2); their baked terrain, env and objects are byte-identical. Which letter is which ace style is NOT established.",
+ "missions": [
+  {"no": "01", "title": "Glacial Skies", "operation": "Crossbow", "area": "Valais Air Base", "stages": ["m01a"]},
+  {"no": "02", "title": "Annex", "operation": "Roselein", "area": "Arlon", "stages": ["m02a"]},
+  {"no": "03", "title": "The Round Table", "operation": "Choker One", "area": "B7R", "stages": ["m03k", "m03m", "m03n"]},
+  {"no": "04", "title": "Juggernaut", "operation": "Offensive Campaign No.4101", "area": "Futuro Canal", "stages": ["m04k", "m04m", "m04n"]},
+  {"no": "05", "title": "Flicker of Hope", "operation": "Varsity", "area": "Solis Ortus", "stages": ["m05a"]},
+  {"no": "06", "title": "Diapason", "operation": "Constantine", "area": "Directus", "stages": ["m06a"]},
+  {"no": "07", "title": "Bastion", "operation": "Hell Bound", "area": "Mt. Ivrea", "stages": ["m07a"]},
+  {"no": "08", "title": "Merlon", "operation": "Dynamo", "area": "Schayne Plains", "stages": ["m08k", "m08m", "m08n"]},
+  {"no": "09", "title": "Sword of Annihilation", "operation": "Judgment", "area": "Tauberg", "stages": ["m09a"]},
+  {"no": "10", "title": "Mayhem", "operation": "Battle-Axe", "area": "B7R", "stages": ["m10k", "m10m", "m10n"]},
+  {"no": "11", "title": "The Inferno", "operation": "Cannibal", "area": "Hoffnung", "stages": ["m11a"]},
+  {"no": "12", "title": "The Stage of Apocalypse", "operation": "Ravage", "area": "Waldreich", "stages": ["m12a"]},
+  {"no": "13", "title": "Lying in Deceit", "operation": "Stone Age", "area": "Mt. Schirm", "stages": ["m13a"]},
+  {"no": "14", "title": "The Final Overture", "operation": "Broom", "area": "Anfang", "stages": ["m14k", "m14m", "m14n"]},
+  {"no": "15", "title": "The Talon of Ruin", "operation": "Valkyrie", "area": "----", "stages": ["m15a"]},
+  {"no": "16", "title": "The Demon of the Round Table", "operation": "Thunderbolt", "area": "B7R", "stages": ["m16k", "m16m", "m16n"]},
+  {"no": "17", "title": "The Valley of Kings", "operation": "Point Blank", "area": "Avalon Dam", "stages": ["m17a"]},
+  {"no": "18", "title": "Zero", "operation": "----", "area": "Avalon Dam", "stages": ["m18a"]},
+  {"no": "SP", "title": "The Gauntlet", "operation": "----", "area": "B7R", "stages": ["r01a"]}
+ ],
+ "other_stages": {
+  "k00a": "no title card / no briefing id (inference: tutorial or demo stage)",
+  "v01a v02a v03a v04a v05a v06a v08a": "versus stages (data/select/VSstage.swa; mission packs v*; v05a shares the B7R heightfield and tiles); inference",
+  "f01a..f18a fr1a": "mission packs only (no data/map entry); inference: free-mission packs that use the stage of the same number (f03k -> m03k, fr1a -> r01a)"
+ }
+}

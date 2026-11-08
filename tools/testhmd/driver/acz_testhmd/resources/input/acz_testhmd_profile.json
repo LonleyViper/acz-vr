@@ -1,0 +1,7 @@
+{
+  "jsonid": "input_profile",
+  "controller_type": "acz_testhmd",
+  "input_bindingui_mode": "hmd",
+  "input_source": {},
+  "default_bindings": []
+}

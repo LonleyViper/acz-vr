@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "id": "option3-look-duty-cycle",
+  "purpose": "Option 3 stage 0 (read-only probe run): 100 ms look-left presses with 100 ms waits (checkpoint overhead makes the true gap longer; the probe timeline is the measurement), then a 4 s forward gap.",
+  "requiresCurrentUserApproval": true,
+  "expectedStartCheckpoint": "unpaused-mission-cockpit-view",
+  "maxActions": 10,
+  "actions": [
+    {
+      "type": "hold",
+      "key": "look-left",
+      "durationMilliseconds": 100,
+      "captureDuringHold": true,
+      "expectedAfter": "cockpit-view-looking-left"
+    },
+    {
+      "type": "wait",
+      "durationMilliseconds": 100,
+      "expectedAfter": "cockpit-view-forward"
+    },
+    {
+      "type": "hold",
+      "key": "look-left",
+      "durationMilliseconds": 100,
+      "captureDuringHold": true,
+      "expectedAfter": "cockpit-view-looking-left"
+    },
+    {
+      "type": "wait",
+      "durationMilliseconds": 100,
+      "expectedAfter": "cockpit-view-forward"
+    },
+    {
+      "type": "hold",
+      "key": "look-left",
+      "durationMilliseconds": 100,
+      "captureDuringHold": true,
+      "expectedAfter": "cockpit-view-looking-left"
+    },
+    {
+      "type": "wait",
+      "durationMilliseconds": 100,
+      "expectedAfter": "cockpit-view-forward"
+    },
+    {
+      "type": "hold",
+      "key": "look-left",
+      "durationMilliseconds": 100,
+      "captureDuringHold": true,
+      "expectedAfter": "cockpit-view-looking-left"
+    },
+    {
+      "type": "wait",
+      "durationMilliseconds": 100,
+      "expectedAfter": "cockpit-view-forward"
+    },
+    {
+      "type": "hold",
+      "key": "look-left",
+      "durationMilliseconds": 100,
+      "captureDuringHold": true,
+      "expectedAfter": "cockpit-view-looking-left"
+    },
+    {
+      "type": "wait",
+      "durationMilliseconds": 4000,
+      "expectedAfter": "cockpit-view-forward"
+    }
+  ],
+  "stopCondition": "Stop if the start screenshot is not the in-flight cockpit view, or if a menu, overlay or non-mission screen appears."
+}

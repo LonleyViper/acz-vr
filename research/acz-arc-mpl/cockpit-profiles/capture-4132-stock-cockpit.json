@@ -1,0 +1,60 @@
+{
+  "schema": "acz-vr-cockpit-display-profile/v1",
+  "id": "capture-4132-stock-cockpit",
+  "aircraft": {
+    "model_id": "unidentified",
+    "status": "capture-specific prototype; do not reuse as an F-16C profile"
+  },
+  "capture": {
+    "width": 2560,
+    "height": 1440,
+    "source": "research/experiments/step14-live-run11-full/png/acz-vr-png-4132-875315921-s2-eye0.png"
+  },
+  "hud_texture": {
+    "width": 2560,
+    "height": 1440,
+    "source": "research/experiments/step14-live-run11-full/png/acz-vr-png-4132-875315921-s2-hud-on-black.png",
+    "alpha": "premultiplied source capture"
+  },
+  "canopy_hud": {
+    "protected": [
+      "flight_reticle",
+      "attitude_ladder",
+      "targeting_cues",
+      "speed",
+      "altitude",
+      "heading"
+    ],
+    "protected_regions": [
+      { "id": "flight_reticle", "rect": [820, 610, 920, 260] },
+      { "id": "attitude_ladder", "rect": [760, 390, 1040, 650] },
+      { "id": "speed", "rect": [500, 640, 340, 190] },
+      { "id": "altitude", "rect": [1740, 640, 340, 190] }
+    ],
+    "rule": "protected domains remain on the canopy-HUD layer and must not be included by console source crops"
+  },
+  "console_displays": [
+    {
+      "id": "lower-centre-tactical-console",
+      "kind": "radar",
+      "source_crop": [82, 868, 620, 560],
+      "surface_polygon": [[985, 1080], [1575, 1080], [1615, 1350], [945, 1350]],
+      "alignment": { "centreline_x": 1280, "centroid_tolerance_px": 20 },
+      "status": "image-space calibration target only; centred on the capture centreline and deliberately below the forward hood/combiner; mesh surface/UV unresolved"
+    },
+    {
+      "id": "lower-aircraft-status-console",
+      "kind": "stores_status",
+      "source_crop": [760, 1200, 600, 240],
+      "surface_polygon": [[500, 1190], [820, 1190], [830, 1370], [490, 1370]],
+      "status": "small left-console status target; image-space calibration only; mesh surface/UV unresolved"
+    },
+    {
+      "id": "lower-stores-console",
+      "kind": "stores_status",
+      "source_crop": [2038, 900, 522, 540],
+      "surface_polygon": [[1700, 1190], [1990, 1190], [2030, 1370], [1690, 1370]],
+      "status": "small right-console weapons/status target; image-space calibration only; mesh surface/UV unresolved"
+    }
+  ]
+}

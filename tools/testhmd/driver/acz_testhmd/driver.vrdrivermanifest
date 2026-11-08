@@ -1,0 +1,10 @@
+{
+	"alwaysActivate": false,
+	"name" : "acz_testhmd",
+	"directory" : "",
+	"resourceOnly" : false,
+	"hmd_presence" :
+	[
+		"*.*"
+	]
+}

@@ -1,0 +1,8 @@
+@node -e "const fs=require('fs');fs.mkdirSync('tests/acz-vr/.j138-native',{recursive:true});fs.writeFileSync('tests/acz-vr/.j138-native/.gitignore','*\n');"
+@if errorlevel 1 exit /b %errorlevel%
+@call "C:\Program Files\Microsoft Visual Studio\18\Community\VC\Auxiliary\Build\vcvars64.bat"
+@if errorlevel 1 exit /b %errorlevel%
+@cl /nologo /O2 /std:c++17 /EHsc /DACZ_DIAGNOSTICS_OFFLINE_TEST /Isrc/acz-vr /Fotests/acz-vr/.j138-native/ /Fetests/acz-vr/.j138-native/stack_storage_offline_tests.exe tests/acz-vr/stack_storage_offline_tests.cpp src/acz-vr/diagnostics_log.cpp src/acz-vr/runtime_config.cpp src/acz-vr/shader_metadata.cpp src/acz-vr/draw_capture.cpp src/acz-vr/root_binding_metadata.cpp src/acz-vr/srt_payload.cpp src/acz-vr/native_binding_observer.cpp src/acz-vr/buffer_binding_registry.cpp src/acz-vr/capture_enablement.cpp src/acz-vr/capture_input_provider.cpp /link d3d12.lib bcrypt.lib
+@if errorlevel 1 exit /b %errorlevel%
+@cl /nologo /O2 /std:c++17 /EHsc /DACZ_DIAGNOSTICS_OFFLINE_TEST /Isrc/acz-vr /Fotests/acz-vr/.j138-native/ /Fetests/acz-vr/.j138-native/diagnostics_offline_tests.exe tests/acz-vr/diagnostics_offline_tests.cpp tests/acz-vr/.j138-native/diagnostics_log.obj tests/acz-vr/.j138-native/runtime_config.obj tests/acz-vr/.j138-native/shader_metadata.obj tests/acz-vr/.j138-native/draw_capture.obj tests/acz-vr/.j138-native/root_binding_metadata.obj tests/acz-vr/.j138-native/srt_payload.obj tests/acz-vr/.j138-native/native_binding_observer.obj tests/acz-vr/.j138-native/buffer_binding_registry.obj tests/acz-vr/.j138-native/capture_enablement.obj tests/acz-vr/.j138-native/capture_input_provider.obj /link d3d12.lib bcrypt.lib
+@exit /b %errorlevel%

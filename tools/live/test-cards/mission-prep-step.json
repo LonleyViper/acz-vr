@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "mission-prep-step",
+  "purpose": "From the verified Roselein overview that explicitly offers Proceed to mission prep, enter mission preparation once and capture the aircraft or loadout checkpoint.",
+  "requiresCurrentUserApproval": true,
+  "expectedStartCheckpoint": "Roselein overview displaying Menu button: Proceed to mission prep",
+  "maxActions": 1,
+  "actions": [
+    {
+      "type": "tap",
+      "key": "confirm",
+      "expectedAfter": "aircraft or loadout selection checkpoint"
+    }
+  ],
+  "stopCondition": "Stop if the stated Proceed to mission prep prompt is absent, or if deployment/gameplay begins or an unexpected prompt appears after the action."
+}

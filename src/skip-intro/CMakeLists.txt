@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.20)
+project(acz-skip-intro CXX)
+set(CMAKE_CXX_STANDARD 17)
+add_library(skip-intro SHARED skip_intro.cpp skip_intro.def)
+set_target_properties(skip-intro PROPERTIES OUTPUT_NAME "XINPUT1_4" PREFIX "")

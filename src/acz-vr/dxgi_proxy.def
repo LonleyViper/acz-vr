@@ -1,0 +1,7 @@
+LIBRARY dxgi
+EXPORTS
+  CreateDXGIFactory   = ProxyCreateDXGIFactory   @1
+  CreateDXGIFactory1  = ProxyCreateDXGIFactory1  @2
+  CreateDXGIFactory2  = ProxyCreateDXGIFactory2  @3
+  ; J-3b4: device-created notification for the optional d3d12.dll proxy (inert unless enabled).
+  AczVrNotifyDeviceCreated = AczVrNotifyDeviceCreated @4

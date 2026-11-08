@@ -1,0 +1,4 @@
+* text=auto eol=lf
+# Evidence is SHA-256 pinned; preserve original bytes in worktrees.
+research/** -text
+docs/framework-reference.md -text

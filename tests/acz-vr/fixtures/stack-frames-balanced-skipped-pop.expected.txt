@@ -1,0 +1,10 @@
+Stack screening: chain < 16384 bytes; per-function warning > 1024 bytes
+FUNCTION	FRAME_BYTES	PUSH_BYTES	ALLOCATION_BYTES	NOTES
+case	16	8	0	unresolved cyclic allocation: backward branch to $LL1
+DEEPEST KNOWN CHAINS (cycles cut; incomplete paths are not full bounds)
+case: 16 bytes: case
+Inlining: inlined functions are already included in the caller frame; only listing symbols are measured.
+Coverage: missing/indirect/external calls, tail jumps and dynamic RSP writes are unresolved; no full stack bound or runtime parity is proved.
+Accounting: static pushes + static sub rsp + 8-byte return address; summed allocations may overestimate mutually exclusive paths.
+Recursion has no finite bound without a depth limit. Shadow space belongs to caller allocation; no extra 32 bytes added per edge.
+RESULT: INCOMPLETE (known chains below budget); exit 2

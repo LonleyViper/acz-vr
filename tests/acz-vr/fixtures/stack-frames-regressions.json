@@ -1,0 +1,98 @@
+[
+  {
+    "file": "stack-frames-stale-rax.asm",
+    "expected": "stack-frames-stale-rax.expected.txt",
+    "exitCode": 2,
+    "note": "Astra reproduction verbatim: pop rax destroys the cached 32; allocation unknown."
+  },
+  {
+    "file": "stack-frames-backward-sub.asm",
+    "expected": "stack-frames-backward-sub.expected.txt",
+    "exitCode": 2,
+    "note": "Astra reproduction verbatim: repeated sub cannot be counted once."
+  },
+  {
+    "file": "stack-frames-push-loop.asm",
+    "expected": "stack-frames-push-loop.expected.txt",
+    "exitCode": 2,
+    "note": "Unbalanced push in a decorated /FAs backward loop."
+  },
+  {
+    "file": "stack-frames-register-move.asm",
+    "expected": "stack-frames-register-move.expected.txt",
+    "exitCode": 2,
+    "note": "Register-to-register value is not a proven allocation constant."
+  },
+  {
+    "file": "stack-frames-register-add.asm",
+    "expected": "stack-frames-register-add.expected.txt",
+    "exitCode": 2,
+    "note": "Unproven add rsp register must be incomplete too."
+  },
+  {
+    "file": "stack-frames-balanced-loop.asm",
+    "expected": "stack-frames-balanced-loop.expected.txt",
+    "exitCode": 0,
+    "note": "Straight-line push/pop and sub/add cycle has proven zero net growth."
+  },
+  {
+    "file": "stack-frames-forward-jcc.asm",
+    "expected": "stack-frames-forward-jcc.expected.txt",
+    "exitCode": 0,
+    "note": "Forward conditional branch does not repeat an allocation."
+  },
+  {
+    "file": "stack-frames-balanced-skipped-pop.asm",
+    "expected": "stack-frames-balanced-skipped-pop.expected.txt",
+    "exitCode": 2,
+    "note": "Zero linear sum is insufficient when an interior branch skips the pop."
+  },
+  {
+    "file": "stack-frames-budget-precedence.asm",
+    "expected": "stack-frames-budget-precedence.expected.txt",
+    "exitCode": 1,
+    "note": "Known budget breach takes precedence over unknown allocation."
+  },
+  {
+    "file": "stack-frames-dumpbin-loop.asm",
+    "expected": "stack-frames-dumpbin-loop.expected.txt",
+    "exitCode": 2,
+    "note": "Numeric dumpbin backward branch repeats a push."
+  },
+  {
+    "file": "stack-frames-dumpbin-balanced.asm",
+    "expected": "stack-frames-dumpbin-balanced.expected.txt",
+    "exitCode": 0,
+    "note": "Numeric-address cycle has proven zero net growth."
+  },
+  {
+    "file": "stack-frames-probe-loop.asm",
+    "expected": "stack-frames-probe-loop.expected.txt",
+    "exitCode": 2,
+    "note": "Probe allocation inside a loop remains unresolved."
+  },
+  {
+    "file": "stack-frames-branch-constant.asm",
+    "expected": "stack-frames-branch-constant.expected.txt",
+    "exitCode": 2,
+    "note": "A join invalidates path-dependent constant knowledge."
+  },
+  {
+    "file": "stack-frames-plain-label.asm",
+    "expected": "stack-frames-plain-label.expected.txt",
+    "exitCode": 2,
+    "note": "A plain label inside PROC is local, including loope backward cycles."
+  },
+  {
+    "file": "stack-frames-dumpbin-join.asm",
+    "expected": "stack-frames-dumpbin-join.expected.txt",
+    "exitCode": 2,
+    "note": "Numeric branch joins cannot retain a fallthrough-only RAX constant."
+  },
+  {
+    "file": "stack-frames-balanced-probe.asm",
+    "expected": "stack-frames-balanced-probe.expected.txt",
+    "exitCode": 0,
+    "note": "Known chkstk preserves RAX and the straight-line cycle balances exactly."
+  }
+]

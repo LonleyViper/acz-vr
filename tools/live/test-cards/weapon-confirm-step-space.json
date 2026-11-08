@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "weapon-confirm-step-space",
+  "purpose": "From the verified default SAAM special-weapon selection, retain that weapon once and capture the wingman or deployment checkpoint.",
+  "requiresCurrentUserApproval": true,
+  "expectedStartCheckpoint": "special-weapon selection showing SAAM selected",
+  "maxActions": 1,
+  "actions": [
+    {
+      "type": "tap",
+      "key": "accelerate",
+      "expectedAfter": "wingman or deployment selection checkpoint"
+    }
+  ],
+  "stopCondition": "Stop if SAAM is not visibly selected before input, or if gameplay begins or an unexpected prompt appears after the action."
+}

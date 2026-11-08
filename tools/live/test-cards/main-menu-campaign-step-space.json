@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "main-menu-campaign-step-space",
+  "purpose": "From the verified main menu with Campaign selected, enter the Campaign menu once and capture the resulting selection state.",
+  "requiresCurrentUserApproval": true,
+  "expectedStartCheckpoint": "main menu showing Campaign selected",
+  "maxActions": 1,
+  "actions": [
+    {
+      "type": "tap",
+      "key": "accelerate",
+      "expectedAfter": "Campaign selection state with Continue available"
+    }
+  ],
+  "stopCondition": "Stop if the initial screenshot is not the main menu with Campaign selected, or if a mission begins or an unexpected prompt appears after the action."
+}

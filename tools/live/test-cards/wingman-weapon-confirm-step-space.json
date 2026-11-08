@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "wingman-weapon-confirm-step-space",
+  "purpose": "From the verified wingman XMAA special-weapon selection, retain that displayed default once and capture the next wingman or deployment checkpoint.",
+  "requiresCurrentUserApproval": true,
+  "expectedStartCheckpoint": "wingman special-weapon selection showing XMAA selected",
+  "maxActions": 1,
+  "actions": [
+    {
+      "type": "tap",
+      "key": "accelerate",
+      "expectedAfter": "wingman or deployment confirmation checkpoint"
+    }
+  ],
+  "stopCondition": "Stop if XMAA is not visibly selected before input, or if gameplay begins or an unexpected prompt appears after the action."
+}

@@ -1,0 +1,39 @@
+{
+  "schema": "acz-cockpit-display-surface-candidates/v1",
+  "status": "offline candidate evidence only; not a selectable runtime profile",
+  "model": {
+    "archive_model_id": "f16ck",
+    "mpl_sha256": "cf58a887649bb83c9d837e8608d619c83ef59d8b32e9366a2428ca1723234436",
+    "acm_part": 2,
+    "acm_sha256": "8fea96237e8dcde5b050aaebc95d7f8a466f6a1b302e201915f7f4f2dfc83d2f",
+    "texture_part": 9,
+    "texture_sha256": "f07f64cb2bb906009f16bdd20bc549338f9244d2b9bab81ad66ae8f69de01acc",
+    "texture_size": [128, 128]
+  },
+  "candidates": [
+    {
+      "id": "negative-x-lower-console-candidate",
+      "proposed_domain": "unassigned",
+      "domain_evidence": "Four position/UV source lanes form a broad planar region visually near a lower panel in the provisional preview; actual draw, material and function remain unverified.",
+      "acm_batch_offset": "0x191e0",
+      "source_vertex_count": 4,
+      "uv_rect_normalized": [0.2460940033, 0.9335939884, 0.2851560116, 0.9726560116],
+      "position_bounds_source_lanes": [-1.0334249735, 2.1474030018, -35.7096710205, -0.5101749897, 2.6459929943, -35.5760726929]
+    },
+    {
+      "id": "positive-x-lower-console-candidate",
+      "proposed_domain": "unassigned",
+      "domain_evidence": "Four position/UV source lanes form a mirrored broad planar region visually near a lower panel in the provisional preview; actual draw, material and function remain unverified.",
+      "acm_batch_offset": "0x19284",
+      "source_vertex_count": 4,
+      "uv_rect_normalized": [0.2505260110, 0.9351190329, 0.2807239890, 0.9711329937],
+      "position_bounds_source_lanes": [0.5101680160, 2.1474070549, -35.7096519470, 1.0334180593, 2.6459980011, -35.5760536194]
+    }
+  ],
+  "not_established": [
+    "VIF/VU execution, GIF primitive assembly, final triangle topology or actual part-9 texture binding.",
+    "Whether these are display surfaces rather than background geometry, and whether separate colours or text are drawn on top.",
+    "Aircraft left/right, cockpit eye, runtime draw identity, and per-eye calibration."
+  ],
+  "runtime_gate": "No radar or stores mapping is authorized from this candidate record; prove surface identity and independent per-surface rendering first."
+}

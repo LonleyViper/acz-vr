@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "id": "cockpit-look-sweep-held",
+  "purpose": "From a verified in-flight cockpit view, capture the native look camera while each NumPad look direction is held (views snap back on release).",
+  "requiresCurrentUserApproval": true,
+  "expectedStartCheckpoint": "unpaused-mission-cockpit-view",
+  "maxActions": 4,
+  "actions": [
+    { "type": "hold", "key": "look-left", "durationMilliseconds": 700, "captureDuringHold": true, "expectedAfter": "cockpit-view-looking-left" },
+    { "type": "hold", "key": "look-right", "durationMilliseconds": 700, "captureDuringHold": true, "expectedAfter": "cockpit-view-looking-right" },
+    { "type": "hold", "key": "look-up", "durationMilliseconds": 700, "captureDuringHold": true, "expectedAfter": "cockpit-view-looking-up" },
+    { "type": "hold", "key": "look-down", "durationMilliseconds": 700, "captureDuringHold": true, "expectedAfter": "cockpit-view-looking-down" }
+  ],
+  "stopCondition": "Stop if the start screenshot is not the in-flight cockpit view, or if a menu, overlay or non-mission screen appears."
+}
